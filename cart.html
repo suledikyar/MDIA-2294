@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&amp;family=Merienda:wght@400;500;600&amp;family=Open+Sans:ital,wght@0,300;0,500;1,600&amp;family=Roboto+Mono:ital,wght@0,300;0,500;1,300&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="hero-image">
+              <div class="hero-text">
+              <h4 id="textimg">Campfire Cozy</h4>
+              <p id="slogan">Shop Smart / Camp More / Worry Less</p>
+            </div>
+            </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Shop</a>
+      <a href="about.html">About Us</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+
+  <main>
+    <h2>Shopping Cart</h2>
+
+    <div class="cart">
+      <div class="cart-item">
+        <img src="/images/sleepingbag.jpg" alt="-10C Sleeping Bag">
+        <h3>-10C Sleeping Bag</h3>
+        <p>Ultra-Dry Down fill uses a water-repellent finish that also provides antimicrobial protection.Women's specific taper is wider in the hips.</p>
+        <p>$99.99</p>
+        <button type="button">Remove from Cart</button>
+      </div>
+
+      <div class="cart-item">
+        <img src="/images/chair.jpg" alt="Camping Chair">
+        <h3>Velinox Camping Chair</h3>
+        <p>Relax at basecamp in your deluxe throne. The tall back and wide seat are supportive and comfortable. Quick and easy to set up.</p>
+        <p>$79.99</p>
+        <button type="button">Remove from Cart</button>
+      </div>
+
+      
+
+    </div>
+
+    <p id="total">Total: $179.98</p>
+    <button type="button" id="shop-button">Continue to Shop</button>
+
+    <h2>Checkout</h2>
+
+    <form class="checkout-form">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+      </div>
+
+      <div class="form-group">
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required>
+      </div>
+
+      <div class="form-group">
+        <label for="zipCode">Zip Code</label>
+        <input type="text" id="zipCode" name="zipCode" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+      </div>
+
+      <div class="form-group">
+        <label for="expiryDate">Expiry Date</label>
+        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" required>
+      </div>
+
+      <button type="submit" id="submit-button">Place Order</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <div class="footer-columns">
+
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: campfire@cozy.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+      </div>
+
+      
+    </div>
+    <p>&copy; 2023 Your E-commerce Store. All rights reserved.</p>
+  </footer>
+   
+  <script src="js/removeFromCart.js"></script>
+  
+</body>
+</html>
